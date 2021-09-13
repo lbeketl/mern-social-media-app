@@ -1,5 +1,5 @@
 import './topbar.css';
-import { Search} from '@material-ui/icons';
+import { Search, Person, Chat, Notifications } from '@material-ui/icons';
 
 function Topbar() {
   return (
@@ -8,22 +8,38 @@ function Topbar() {
         <span className="logo">My Social</span>
       </div>
       <div className="topbarCenter">
-        <div className="searchBar">
-          <Search/>
-          <input className="searchInput" type="text" placeholder="Search for friends, post or video" />
+        <div className="searchbar">
+          <Search className="searchIcon"/>
+          <input
+            className="searchInput"
+            type="text"
+            placeholder="Search for friends, post or video"
+          />
         </div>
       </div>
       <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarlink">Homepage</span>
-          <span className="topbarlink">Timeline</span>
+          <span className="topbarLink">Homepage</span>
+          <span className="topbarLink">Timeline</span>
         </div>
         <div className="topbarIcons">
-          
+          <div className="topbarIconItem">
+            <Person />
+            <span className="topbarIconBadge">1</span>
+          </div>
+          <div className="topbarIconItem">
+            <Chat />
+            <span className="topbarIconBadge">1</span>
+          </div>
+          <div className="topbarIconItem">
+            <Notifications />
+            <span className="topbarIconBadge">1</span>
+          </div>
         </div>
+        <img className="topbarImg" src="/assets/person/1.jpeg" alt="" />
       </div>
     </div>
-  )
+  );
 }
 
-export default Topbar
+export default Topbar;

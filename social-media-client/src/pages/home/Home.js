@@ -1,11 +1,20 @@
+import './home.css';
 import Topbar from '../../components/topbar/Topbar.jsx';
+import Sidebar from '../../components/sidebar/Sidebar.jsx';
+import Feed from '../../components/feed/Feed.jsx';
+import Rightbar from '../../components/rightbar/Rightbar.jsx';
 
 function Home() {
   return (
-    <div className="home">
-      <Topbar/>
-    </div>
-  )
+    <>
+      <Topbar />
+      <div className="homeContainer">
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </div>
+    </>
+  );
 }
 
-export default Home
+export default Home;
