@@ -7,7 +7,7 @@ function Rightbar({ profile }) {
     return (
       <>
         <div className="birthdayContainer">
-          <img className="birthdayImg" src="assets/gift.png" alt="" />
+          <img className="birthdayImg" src={`${profile}gift.png`} alt="" />
           <span className="birthdayText">
             <b>Pola Foster</b> and <b>3 other friends</b> have a birthday today.
           </span>
@@ -44,27 +44,27 @@ function Rightbar({ profile }) {
         <h4 className="rightbarTitle">User friends</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/person/2.jpeg" alt="" />
+            <img className="rightbarFollowingImg" src={`${profile}person/2.jpeg`} alt="" />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/person/1.jpeg" alt="" />
+            <img className="rightbarFollowingImg" src={`${profile}person/1.jpeg`} alt="" />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/person/3.jpeg" alt="" />
+            <img className="rightbarFollowingImg" src={`${profile}person/3.jpeg`} alt="" />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/person/4.jpeg" alt="" />
+            <img className="rightbarFollowingImg" src={`${profile}person/4.jpeg`} alt="" />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/person/5.jpeg" alt="" />
+            <img className="rightbarFollowingImg" src={`${profile}person/5.jpeg`} alt="" />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="assets/person/6.jpeg" alt="" />
+            <img className="rightbarFollowingImg" src={`${profile}person/6.jpeg`} alt="" />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
         </div>
