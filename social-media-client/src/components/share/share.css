@@ -63,7 +63,7 @@
   font-weight: 500;
 }
 
-.shareButtons {
+.shareBottom {
   display: flex;
   justify-content: space-between;
 }
